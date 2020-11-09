@@ -1,0 +1,12 @@
+* {
+  padding: 5px;
+  margin: 5px;
+}
+
+.online {
+  border: 1px solid darkgreen;
+}
+
+.offline {
+  border: 1px solid #980000;
+}

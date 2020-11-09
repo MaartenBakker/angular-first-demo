@@ -1,0 +1,14 @@
+p {
+  padding: 10px;
+  margin: 5px;
+}
+
+.greaterThan5 {
+  background-color: aqua;
+  color: white;
+}
+
+.lessThan5 {
+  background-color: crimson;
+  color: black;
+}

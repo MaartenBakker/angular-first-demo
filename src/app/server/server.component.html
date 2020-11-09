@@ -1,2 +1,6 @@
-<p [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} with ID {{ getServerId() }} is {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}"
+ [ngClass]="{online: getServerStatus() === 'online',
+  offline: getServerStatus() === 'offline'}">
+  {{ 'Server' }} with ID {{ getServerId() }} is {{ getServerStatus() }}</p>
+
 <button class="btn" (click)="toggle()">Toggle</button>

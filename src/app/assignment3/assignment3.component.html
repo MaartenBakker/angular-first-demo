@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="onToggleParagraphVisible()">Display Details</button>
+<p *ngIf="paragraphVisible">Hier ben ik</p>
+<p *ngFor="let stamp of timeStamps; let i = index"
+   [innerText]="getTime(stamp)"
+   [ngClass]="{greaterThan5: i >= 5,
+               lessThan5: i < 5 }"></p>
